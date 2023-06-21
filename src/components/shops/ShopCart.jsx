@@ -1,52 +1,25 @@
-//import React, { useState } from "react"
-
-//const ShopCart = ({ addToCart, shopItems }) => {
-//  const [count, setCount] = useState(0)
-//  const increment = () => {
-//    setCount(count + 1)
-//  }
-
-//  return (
-//    <>
-//      {shopItems.map((shopItems) => {
-//        return (
-//          <div className='product mtop'>
-//            <div className='img'>
-//              <span className='discount'>{shopItems.discount}% Off</span>
-//              <img src={shopItems.cover} alt='' />
-//              <div className='product-like'>
-//                <label>{count}</label> <br />
-//                <i className='fa-regular fa-heart' onClick={increment}></i>
-//              </div>
-//            </div>
-//            <div className='product-details'>
-//              <h3>{shopItems.name}</h3>
-//              <div className='rate'>
-//                <i className='fa fa-star'></i>
-//                <i className='fa fa-star'></i>
-//                <i className='fa fa-star'></i>
-//                <i className='fa fa-star'></i>
-//                <i className='fa fa-star'></i>
-//              </div>
-//              <div className='price'>
-//                <h4>${shopItems.price}.00 </h4>
-//                <button onClick={() => addToCart(shopItems)}>
-//                  <i className='fa fa-plus'></i>
-//                </button>
-//              </div>
-//            </div>
-//          </div>
-//        )
-//      })}
-//    </>
-//  )
-//}
-
-//export default ShopCart
-
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
+import axios from 'axios';
 
 const ShopCart = ({ shopItems, addToCart }) => {
+
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    const getAllStudents = async() => {
+      try {
+        const products1 = await axios.get("http://127.0.0.1:8000/api/products");
+        console.log(products1.data);
+        setProducts(products1.data);
+      }
+      catch (error) {
+        console.log(error);
+      }
+    }
+
+    getAllStudents();
+  }, []);
+
   const [count, setCount] = useState(0)
   const increment = () => {
     setCount(count + 1)
@@ -54,20 +27,20 @@ const ShopCart = ({ shopItems, addToCart }) => {
 
   return (
     <>
-      {shopItems.map((shopItems, index) => {
+      {products && products.map((item) => {
         return (
           <div className='box'>
             <div className='product mtop'>
               <div className='img'>
-                <span className='discount'>{shopItems.discount}% Off</span>
-                <img src={shopItems.cover} alt='' />
+                <span className='discount'>{10}% Off</span>
+                <img src={`http://127.0.0.1:8000/uploads/${item.image}`} alt='logo' style={{ width: "200px", height: "300px" }} />
                 <div className='product-like'>
                   <label>{count}</label> <br />
                   <i className='fa-regular fa-heart' onClick={increment}></i>
                 </div>
               </div>
               <div className='product-details'>
-                <h3>{shopItems.name}</h3>
+                <h3>{item.pname}</h3>
                 <div className='rate'>
                   <i className='fa fa-star'></i>
                   <i className='fa fa-star'></i>
@@ -76,11 +49,9 @@ const ShopCart = ({ shopItems, addToCart }) => {
                   <i className='fa fa-star'></i>
                 </div>
                 <div className='price'>
-                  <h4>${shopItems.price}.00 </h4>
-                  {/* step : 3  
-                     if hami le button ma click garryo bahne 
-                    */}
-                  <button onClick={() => addToCart(shopItems)}>
+                  <h4>{item.Price}.00 </h4>
+
+                  <button onClick={() => addToCart(item)}>
                     <i className='fa fa-plus'></i>
                   </button>
                 </div>

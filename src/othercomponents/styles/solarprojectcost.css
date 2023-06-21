@@ -1,0 +1,119 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui;
+} */
+
+.feature-1-b{
+    position: relative;
+    top: 5vh;
+    left: 2vw;
+    margin-bottom: 10vh;
+    height: 70vh;
+    width: 95vw;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.feature-1-heading {
+    margin-left: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(80, 180, 220);
+}
+
+.feature-1-con {
+    position: relative;
+    top: 2vh;
+    left: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60vh;
+    width: 32.5vw;
+    background-color: transparent;
+    backdrop-filter: blur(30px);
+}
+
+.feature-1a {
+    font-size: 16px;
+    position: relative;
+    left: 2vw;
+    font-weight: bold;
+    color: grey;
+}
+
+.feature-1-iteam select {
+    height: 3vh;
+    width: 14vw;
+    /* left: 1vw;
+    position: relative; */
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-weight: bold;
+    color: gray;
+}
+
+.feature-1a-form input {
+    height: 3vh;
+    width: 14vw;
+    /* left: 1vw;
+    position: relative; */
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+.feature-1-form input {
+    height: 3vh;
+    width: 4vw;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.fff {
+    margin-left: 3px;
+    font-size: 14px;
+    font-weight: bold;
+    color: grey;
+}
+
+.feature-1-form input button {
+    color: white;
+}
+
+.feature-1-form {
+    position: relative;
+    left: 3vw;
+}
+
+.feature-1-iteam button {
+    position: relative;
+    left: 8vw;
+    height: 5vh;
+    width: 12vw;
+    background-color: rgb(80, 180, 220);
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.feature1-image img {
+    height: 70vh;
+    width: 56vw;
+    position: absolute;
+    top: 0vh;
+    left: 39vw;
+    bottom: 64vh;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.feature-button {
+    position: relative;
+    left: 22vw;
+    bottom: 5vh;
+    color: gray;
+}

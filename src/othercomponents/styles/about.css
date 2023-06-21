@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui;
+}
+
+.about-body {
+    margin-top: 30px;
+    height: 100vh;
+    width: 100vw;
+}
+
+.objective-about {
+    position: relative;
+    top: 3vh;
+    left: 15vw;
+    height: 35vh;
+    width: 70vw;
+}
+
+.about-heading {
+    font-size: 30px;
+    font-weight: bolder;
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgb(80, 180, 220);
+    color: rgb(80, 180, 220);
+}
+
+.about-content {
+    font-size: 16px;
+}
+
+.about-main {
+    position: relative;
+    left: 10vw;
+    display: flex;
+    height: 60vh;
+    width: 80vw;
+    justify-content: space-between;
+}
+
+.about-person {
+    height: 58vh;
+    width: 25vw;
+}
+
+.about-image img {
+    position: relative;
+    left: 4vw;
+    height: 42vh;
+    width: 18vw;
+    border-radius: 50%;
+}
+
+.about-image img:hover {
+    height: 44vh;
+    width: 19vw;
+}
+
+.about-name {
+    position: relative;
+    left: 10vw;
+    font-size: 21px;
+    font-weight: bolder;
+}
+
+.about-name-2 {
+    position: relative;
+    left: 9vw;
+    font-size: 21px;
+    font-weight: bolder;
+}
+
+.about-name-1 {
+    position: relative;
+    left: 8vw;
+    font-size: 21px;
+    font-weight: bolder;
+}
+
+.about-status {
+    position: relative;
+    left: 10.6vw;
+    font-size: 14px;
+    font-weight: light;
+}

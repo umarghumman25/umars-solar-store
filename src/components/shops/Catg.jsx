@@ -30,7 +30,7 @@ const Catg = () => {
   return (
     <>
       <div className='category'>
-        <div className='chead d_flex'>
+        <div className='chead d_flex' style={{justifyContent:"space-around"}}>
           <h1>Brands </h1>
           <h1>Shops </h1>
         </div>
@@ -42,9 +42,9 @@ const Catg = () => {
             </div>
           )
         })}
-        <div className='box box2'>
+        {/* <div className='box box2'>
           <button>View All Brands</button>
-        </div>
+        </div> */}
       </div>
     </>
   )

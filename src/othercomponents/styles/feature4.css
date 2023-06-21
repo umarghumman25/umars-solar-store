@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui;
+}
+
+.feature-4-body {
+    position: relative;
+    top: 5vh;
+    left: 2vw;
+    height: 70vh;
+    width: 95vw;
+    margin-bottom: 10vh;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.feature-4-heading {
+    position: relative;
+    left: 30px;
+    font-size: 22px;
+    font-weight: bold;
+    color: purple;
+}
+
+.feature-4-container {
+    backdrop-filter: blur(20px);
+    position: relative;
+    background: transparent;
+    top: 4vh;
+    left: 1vw;
+    height: 52vh;
+    width: 33vw;
+    border: 2px solid purple;
+    border-radius: 15px;
+}
+
+.feature-43 {
+    margin-right: 0.6vw;
+}
+
+.feature-4-iteam button {
+    position: absolute;
+    top: 55vh;
+    left: 9vw;
+    height: 5vh;
+    width: 12vw;
+    background-color: purple;
+    font-size: 14px;
+    color: white;
+    border-radius: 10px;
+}
+
+.feature-4-iteam input {
+    position: absolute;
+    top: 25vh;
+    left: 10vw;
+    height: 4vh;
+    width: 20vw;
+    background: transparent;
+    color: red;
+}
+
+.feature-4-iteam input button {
+    background: transparent;
+}
+
+.feature4-image img {
+    height: 70vh;
+    width: 55vw;
+    position: absolute;
+    top: 0vh;
+    left: 40vw;
+    bottom: 54vh;
+    border-radius: 0px 20px 20px 0px;
+}

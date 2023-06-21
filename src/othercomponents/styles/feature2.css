@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui;
+}
+
+.feature-2-body {
+    position: relative;
+    top: 5vh;
+    left: 2vw;
+    height: 83vh;
+    margin-bottom: 10vh;
+    width: 95vw;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.fieldheading {
+    display: flex;
+    justify-content: space-between;
+    width: 30vw;
+    margin-left: 6vw;
+    font-size: 14px;
+    font-weight: bolder;
+    padding-top: 2vh;
+}
+
+.feature-2-heading {
+    margin-left: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: rgb(80, 180, 220);
+}
+
+.feature-2-iteam {
+    margin-left: 1vw;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+}
+
+.feature-2-container {
+    backdrop-filter: blur(30px);
+    position: relative;
+    top: 2vh;
+    left: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60vh;
+    width: 34vw;
+}
+
+
+/* .feature-11 {
+    font-size: 16px;
+    margin-right: 6vw;
+}
+
+.feature-12 {
+    font-size: 16px;
+    margin-right: 1.1vw;
+}
+
+.feature-13 {
+    font-size: 16px;
+    margin-right: 2.6vw;
+}
+
+.feature-14 {
+    font-size: 16px;
+    margin-right: 2vw;
+}
+
+.feature-15 {
+    font-size: 16px;
+    margin-right: 2.05vw;
+}
+
+.feature-16 {
+    font-size: 16px;
+    margin-right: 4.1vw;
+} */
+
+.feature-11a {
+    font-size: 16px;
+    position: relative;
+    left: 2vw;
+}
+
+.feature-2-iteam select {
+    height: 3vh;
+    width: 14vw;
+    /* left: 1vw;
+    position: relative; */
+    background-color: transparent;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+.feature-2-button {
+    margin-left: 1vw;
+}
+
+.feature-2a-button {
+    margin-left: 1vw;
+}
+
+.feature-2-button button {
+    height: 4vh;
+    width: 5vw;
+    border-radius: 8px;
+    background-color: rgb(4, 184, 4);
+    color: white;
+    font-weight: bold;
+}
+
+.feature-2a-button button {
+    height: 4vh;
+    width: 5vw;
+    border-radius: 8px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+
+.feature-2-form input {
+    height: 2.8vh;
+    width: 12vw;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.feature-2-form input button {
+    color: white;
+}
+
+.feature-2-form {
+    position: relative;
+    left: 1vw;
+    margin-right: 1vw;
+}
+
+.feature-2c-button button {
+    margin-left: 12.5vw;
+    height: 5vh;
+    width: 14vw;
+    background-color: rgb(80, 180, 220);
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.feature-2d-button h1 {
+    margin-left: 16vw;
+    font-size: 27px;
+    color: grey;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.feature2-image img {
+    height: 83vh;
+    width: 52vw;
+    position: absolute;
+    top: 0vh;
+    left: 43vw;
+    bottom: 64vh;
+    border-radius: 0px 20px 20px 0px;
+}

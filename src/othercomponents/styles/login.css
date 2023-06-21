@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui;
+}
+
+.login-container {
+    height: 99vh;
+    width: 100vw;
+    /* background-image: url(/src/components/image/homebattery.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.login-image img {
+    height: 99.8vh;
+    width: 100vw;
+}
+
+.login {
+    position: absolute;
+    bottom: 91vh;
+    display: flex;
+    height: 5vh;
+    width: 22vw;
+    justify-content: space-around;
+    margin-left: 100px;
+    align-items: center;
+}
+
+.login-header:hover {
+    border-bottom: 2px solid rgb(3, 1, 26);
+    color: white;
+    cursor: pointer;
+}
+
+.login-header {
+    font-size: larger;
+    font-weight: bold;
+    transition-property: border-bottom;
+}
+
+.login-form {
+    height: 70vh;
+    width: 70vw;
+    position: absolute;
+    left: 15vw;
+    top: 15vh;
+    border: none;
+    border-radius: 20px;
+}
+
+.login-input1 {
+    float: right;
+    backdrop-filter: blur(25px);
+    height: 59vh;
+    width: 30vw;
+    text-align: center;
+    border-radius: 0px 20px 20px 0;
+    padding-top: 80px;
+    outline: none;
+}
+
+.login-element {
+    margin-top: 25px;
+}
+
+.login-element input {
+    height: 4vh;
+    width: 20vw;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+}
+
+.login-element button {
+    height: 4vh;
+    width: 20vw;
+    background-color: rgb(10, 87, 170);
+    color: white;
+    border-radius: 8px;
+    border: none;
+}
+
+.me {
+    text-decoration: none;
+}
+
+.loginoption {
+    top: 3vh;
+    position: relative;
+    color: burlywood;
+    font-size: 13px;
+}
+
+.login-forpass {
+    margin-left: 14vw;
+    font-size: 12px;
+    text-decoration: none;
+    color: rgb(156, 6, 3);
+}
+
+.login-signup {
+    margin-left: 1.5vw;
+    margin-top: 14px;
+    font-size: 12px;
+}
+
+.es {
+    color: rgb(42, 190, 5);
+}
+
+.login-formhead {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.login-image2 img {
+    position: absolute;
+    height: 70vh;
+    width: 40vw;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.login-input {
+    position: absolute;
+    height: 70vh;
+    width: 40vw;
+    /* background-image: url(./image/login2.webp);
+    background-image: url(/src/components/image/login2.webp);
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.login-heading,
+.login-subheading,
+.login-smallheading {
+    position: absolute;
+    left: 2vw;
+    color: white;
+    backdrop-filter: blur(5px);
+    border-radius: 0 15px 0 0;
+}
+
+.login-heading:hover {
+    font-size: 55px;
+    cursor: pointer;
+}
+
+.login-subheading:hover {
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.login-heading {
+    font-size: 50px;
+    top: 15vh;
+    backdrop-filter: blur(5px);
+}
+
+.login-subheading {
+    font-size: 30px;
+    top: 24vh;
+}
+
+.login-smallheading {
+    top: 30vh;
+}
+
+.login-smallheading:hover {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.iconn {
+    position: absolute;
+    left: 24vw;
+    top: 31vh;
+    font-size: 12px;
+}
+
+.mailicon {
+    position: absolute;
+    left: 24vw;
+    top: 23vh;
+    font-size: 15px;
+}
+
+.login-socialicons {
+    display: flex;
+    height: 20px;
+    width: 120px;
+    justify-content: space-around;
+    position: absolute;
+    top: 35vh;
+    left: 1.5vw;
+    font-size: 18px;
+    transition: border
+}
+
+.facebook:hover {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.insta:hover {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.twitter:hover {
+    font-size: 20px;
+    cursor: pointer;
+}

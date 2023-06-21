@@ -21,6 +21,7 @@
 .cart-items .img {
   width: 150px;
   height: 150px;
+  margin-right: 30px;
 }
 .cart-items img {
   width: 100%;
@@ -29,6 +30,7 @@
 }
 .cart-items .cart-details h3 {
   font-size: 20px;
+  
   font-weight: 500;
   margin-top: 20px;
 }

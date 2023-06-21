@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui;
+}
+
+.signin-body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.signupphoto img {
+    height: 99.5vh;
+    width: 99.5vw;
+}
+
+.signup-container {
+    position: absolute;
+    height: 70vh;
+    width: 40vw;
+    border: 2px solid black;
+    bottom: 20vh;
+    left: 30vw;
+    /* backdrop-filter: blur(30px); */
+    border-radius: 20px;
+}
+
+.signup-heading {
+    position: absolute;
+    left: 13vw;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.line {
+    position: relative;
+    top: 5vh;
+    width: 40vw;
+    border-bottom: 2px solid black;
+}
+
+.signup-subcontainer {
+    position: relative;
+    top: 6vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 60vh;
+    width: 40vw;
+}
+
+.a {
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 5vw;
+}
+
+.b {
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 5.8vw;
+}
+
+.c {
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 1vw;
+}
+
+.d {
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 5.3vw;
+}
+
+.e {
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 4.4vw;
+    position: relative;
+    bottom: 4vh;
+}
+
+.f {
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 3.8vw;
+}
+
+.g {
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 4.1vw;
+}
+
+.element {
+    position: relative;
+    left: 3vw;
+}
+
+textarea {
+    resize: none;
+    background: transparent;
+    border-radius: 8px;
+    color: black;
+    font-weight: bold;
+}
+
+.signup-subcontainer input {
+    /* outline: none; */
+    background-color: transparent;
+    color: black;
+    font-weight: bold;
+    height: 3vh;
+    width: 15vw;
+    border-radius: 8px;
+    text-decoration-color: black;
+}
+
+.element button {
+    height: 5vh;
+    width: 12vw;
+    background-color: rgb(10, 87, 170);
+    color: white;
+    border-radius: 10px;
+}

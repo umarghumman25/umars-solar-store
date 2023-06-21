@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Click the button to get your coordinates.</p>
+
+    <button onclick="getLocation()">Try It</button>
+
+    <p id="demo"></p>
+    <div id='maps'>
+
+    </div>
+    <script>
+        var x = document.getElementById("demo");
+        var suncalc = document.getElementById("maps");
+        var latitude
+        var longitude
+
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+
+                // console.log
+
+
+                // suncalc.setAttribute("src", url);
+            } else {
+                x.innerHTML = "Geolocation is not supported by this browser.";
+            }
+        }
+
+        function showPosition(position) {
+            latitude = position.coords.latitude;
+            longitude = position.coords.longitude;
+
+            x.innerHTML = "Latitude: " + latitude +
+                "<br>Longitude: " + longitude;
+            const url = `https://www.suncalc.org/#/${latitude},${longitude},18/2023.06.11/18:11/324.0/1`;
+
+            suncalc.innerHTML = `    <iframe  src="${url}"></iframe>`;
+        }
+    </script>
+
+</body>
+
+</html>

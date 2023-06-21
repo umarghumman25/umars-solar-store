@@ -1,0 +1,288 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: system-ui;
+}
+
+.flex {
+    display: flex;
+    height: 6vh;
+    width: 99.8vw;
+    background-color: white;
+    color: black;
+    align-items: center;
+    border-bottom: 2px solid black;
+    /* border: 2px solid black; */
+}
+
+.logo img {
+    position: relative;
+    left: 1vw;
+    height: 5vh;
+    width: 5vw;
+}
+
+.person {
+    height: 4vh;
+    width: 8vw;
+    position: relative;
+    left: 57vw;
+    text-align: centre;
+}
+
+.person select {
+    height: 4vh;
+    width: 8vw;
+    border-radius: 100px;
+    text-align: centre;
+    padding-left: 5px;
+    background: transparent;
+}
+
+.background img {
+    width: 100vw;
+    height: 80vh;
+}
+
+.iteam {
+    position: relative;
+    left: 8vw;
+    display: block;
+    height: 4vh;
+    width: 7vw;
+    text-align: center;
+    font-size: larger;
+    transition-property: border-bottom;
+    color: rgb(80, 180, 220);
+    font-weight: bold;
+}
+
+
+/* .iteam:hover {
+    border-bottom: 2px solid skyblue;
+    height: 4.5vh;
+    cursor: pointer;
+} */
+
+footer {
+    height: 50vh;
+    width: 100vw;
+    background-color: rgb(80, 180, 220);
+    color: black;
+}
+
+.s {
+    text-decoration: none;
+    color: rgb(80, 180, 220);
+    font-weight: bold;
+}
+
+.s:hover {
+    border-bottom: 2px solid black;
+    height: 4.5vh;
+    cursor: pointer;
+}
+
+.container {
+    /* font-size: 28px;
+    font-weight: bold;
+    position: relative;
+    top: 3vh;
+    left: 4vw;
+    width: 30vw; */
+    /* font-size: 28px; */
+}
+.pss{
+    font-size: 28px;
+    margin-left:80px;
+
+}
+
+.heading-home {
+    height: 5vh;
+    width: 40vw;
+    position: relative;
+    top: 1vh;
+    left: 4vw;
+    font-size: 18px;
+    font-style: oblique;
+    font-weight: lighter;
+}
+
+.footer-flex {
+    font-size: small;
+    position: relative;
+    top: 5vh;
+    left: 5vw;
+    display: flex;
+    height: 19vh;
+    width: 90vw;
+    /* border: 2px solid black; */
+}
+
+.footer-iteam {
+    display: block;
+    height: 19vh;
+    width: 30vw;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    justify-content: space-evenly;
+    font-size: 16px;
+    /* border: 2px solid black; */
+}
+
+.info {
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+.info1 {
+    font-size: 14px;
+    font-style: system ui;
+    margin-top: 12px;
+}
+
+.hs {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.sayhello {
+    margin-top: 12px;
+}
+
+.sayhello input {
+    outline: none;
+    background: transparent;
+    border-radius: 8px;
+}
+
+.sayhello button {
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    height: 5vh;
+    width: 5vw;
+}
+
+.icon {
+    position: relative;
+    top: 1vh;
+    height: 4vh;
+    width: 10vw;
+    font-size: 15px;
+}
+
+.i {
+    font-size: 14px;
+    position: relative;
+  
+    bottom: 1vh;
+}
+
+.icon:hover {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.tag {
+    position: Absolute;
+    bottom: 32vw;
+    left: 30vw;
+    font-size: 35px;
+    font-weight: bolder;
+    color: white;
+}
+
+.tag1 {
+    position: Absolute;
+    bottom: 32vw;
+    left: 48vw;
+    font-size: 38px;
+    font-weight: bolder;
+    color: black;
+}
+
+.sub-h {
+    position: Absolute;
+    bottom: 29vw;
+    left: 42vw;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    font-size: 15px;
+    height: 3vh;
+    width: 6vw;
+    padding-left: 10px;
+    font-weight: bolder;
+}
+
+.sub-h:hover {
+    font-size: 16px;
+    height: 4vh;
+    cursor: pointer;
+}
+
+.products {
+    position: absolute;
+    left: 3vw;
+    font-size: 35px;
+    font-weight: bolder;
+    color: rgb(80, 180, 220);
+}
+
+.products:hover {
+    width: 15vw;
+    border-bottom: 2px solid rgb(80, 180, 220);
+}
+
+.home-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60vh;
+    width: 90vw;
+}
+
+.home-product {
+    position: relative;
+    left: 2vw;
+    height: 35vh;
+    width: 20vw;
+}
+
+.home-product img {
+    height: 35vh;
+    width: 20vw;
+    border-radius: 10px;
+}
+
+.home-product img:hover {
+    height: 36vh;
+    width: 22vw;
+    
+}
+
+.home-heading {
+    position: absolute;
+    top: 36vh;
+    left: 8vw;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    backdrop-filter: blur(20px);
+    border-bottom: 2px solid rgb(80, 180, 220);
+}
+
+.home-heading:hover {
+    cursor: pointer;
+}
+
+.sc {
+    position: absolute;
+    top: 28vh;
+    left: 35vw;
+    font-size: 10px;
+    font-weight: bold;
+}

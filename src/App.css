@@ -10,6 +10,8 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   background-color: #ffffff;
+
+  
 }
 .background {
   background: #f6f9fc;
@@ -224,15 +226,15 @@ button {
 }
 /*----- control btn -------*/
 /*----- heading -------*/
-.heading .heading-left i {
+ .heading-left i {
   font-size: 30px;
 }
-.heading .heading-left h2 {
+ .heading-left h2 {
   font-size: 25px;
   margin: 5px;
 }
-.heading .heading-right i,
-.heading .heading-right {
+ .heading-right i,
+ .heading-right {
   text-align: right;
   color: grey;
 }

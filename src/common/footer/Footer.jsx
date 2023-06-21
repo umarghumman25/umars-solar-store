@@ -30,7 +30,7 @@ const Footer = () => {
               <li>Terms & Conditions</li>
               <li>Privacy Policy</li>
             </ul>
-          </div>
+          </div> 
           <div className='box'>
             <h2>Customer Care</h2>
             <ul>
@@ -41,7 +41,7 @@ const Footer = () => {
               <li>Returns & Refunds </li>
             </ul>
           </div>
-          <div className='box'>
+           <div className='box'>
             <h2>Contact Us</h2>
             <ul>
               <li>592 R1 Block johar Town lahore </li>

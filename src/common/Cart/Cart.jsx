@@ -1,9 +1,52 @@
 import React from "react"
 import "./style.css"
+import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
+import axios from 'axios';
+import { useState } from 'react';
+import swal from 'sweetalert';
 
 const Cart = ({ CartItem, addToCart, decreaseQty }) => {
+  CartItem = CartItem[0]
+  const item = CartItem
+  console.log(item)
   // Stpe: 7   calucate total of items
-  const totalPrice = CartItem.reduce((price, item) => price + item.qty * item.price, 0)
+  const history = useHistory();
+  const totalPrice = CartItem.Price * CartItem.qty;
+
+  const [loginInput, setLogin] = useState({
+    user_id: '',
+    product_id: '',
+    quantity: '',
+    error_list: [],
+  });
+
+
+  const orderSubmit = (e) => {
+    e.preventDefault();
+    const userid = localStorage.getItem('userid');
+    const data = {
+      quantity: CartItem.qty,
+      userid: userid
+    }
+    console.log(data)
+
+    axios.post(`http://127.0.0.1:8000/api/addtocart/${CartItem.id}`, data).then(res => {
+      if (res.data.status === 200) {
+
+        CartItem = null
+        swal("success", res.data.message, "success");
+        history.push('/Main');
+      }
+      else if (res.data.status === 401) {
+        swal("warning", res.data.message, "warning");
+      }
+      else {
+      }
+
+    });
+
+  }
+
 
   // prodcut qty total
   return (
@@ -16,52 +59,53 @@ const Cart = ({ CartItem, addToCart, decreaseQty }) => {
             {CartItem.length === 0 && <h1 className='no-items product'>No Items are add in Cart</h1>}
 
             {/* yasma hami le cart item lai display garaaxa */}
-            {CartItem.map((item) => {
-              const productQty = item.price * item.qty
+            {
+              // const productQty = item.Price * item.qty
 
-              return (
-                <div className='cart-list product d_flex' key={item.id}>
-                  <div className='img'>
-                    <img src={item.cover} alt='' />
+              // return (
+              <div className='cart-list product d_flex' key={item.id}>
+                <div className='img'>
+                  <img src={`http://127.0.0.1:8000/uploads/${item.image}`} alt='logo' />
+                </div>
+                <div className='cart-details'>
+                  <h3>{item.Pname}</h3>
+                  <h4>
+                    Rs {item.Price}.00 * {item.qty}
+                    <span>Rs {totalPrice}.00</span>
+                  </h4>
+                </div>
+                <div className='cart-items-function'>
+                  <div className='removeCart'>
+                    <button className='removeCart'>
+                      <i className='fa-solid fa-xmark'></i>
+                    </button>
                   </div>
-                  <div className='cart-details'>
-                    <h3>{item.name}</h3>
-                    <h4>
-                      ${item.price}.00 * {item.qty}
-                      <span>${productQty}.00</span>
-                    </h4>
-                  </div>
-                  <div className='cart-items-function'>
-                    <div className='removeCart'>
-                      <button className='removeCart'>
-                        <i className='fa-solid fa-xmark'></i>
-                      </button>
-                    </div>
-                    {/* stpe: 5 
+                  {/* stpe: 5 
                     product ko qty lai inc ra des garne
                     */}
-                    <div className='cartControl d_flex'>
-                      <button className='incCart' onClick={() => addToCart(item)}>
-                        <i className='fa-solid fa-plus'></i>
-                      </button>
-                      <button className='desCart' onClick={() => decreaseQty(item)}>
-                        <i className='fa-solid fa-minus'></i>
-                      </button>
-                    </div>
+                  <div className='cartControl d_flex'>
+                    <button className='incCart' onClick={() => addToCart(item)}>
+                      <i className='fa-solid fa-plus'></i>
+                    </button>
+                    <button className='desCart' onClick={() => decreaseQty(item)}>
+                      <i className='fa-solid fa-minus'></i>
+                    </button>
                   </div>
-
-                  <div className='cart-item-price'></div>
                 </div>
-              )
-            })}
+
+                <div className='cart-item-price'></div>
+              </div>
+
+            }
           </div>
 
           <div className='cart-total product'>
             <h2>Cart Summary</h2>
             <div className=' d_flex'>
               <h4>Total Price :</h4>
-              <h3>${totalPrice}.00</h3>
+              <h3>Rs {totalPrice}.00</h3>
             </div>
+            <button onClick={orderSubmit}> Confirm Order</button>
           </div>
         </div>
       </section>
